@@ -1,0 +1,32 @@
+<button class="btn btn-primary" id="back" (click)="backToHome()">Back</button>
+<div class="container">
+    <div class="card">
+        <div class="text-center">
+            <h2>Teacher Login!</h2>
+            <h6>Please enter Email & Password to continue!</h6>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input required type="email" formControlName="email" class="form-control" id="email"
+                    placeholder="Enter your Email"><br>
+                <span class="text-danger" *ngIf="email.invalid && (email.dirty || email.touched)">
+                    <span *ngIf="email.errors?.['required']">*Email
+                        is required!</span>
+                    <span *ngIf="email.errors?.['email']">*Email
+                        is invalid!</span>
+                </span>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" formControlName="password" class="form-control" id="password"
+                    placeholder="Enter your password"><br>
+                <span class="text-danger"
+                    *ngIf="password.invalid && (password.dirty || password.touched)">*Password
+                    is required!
+                </span>
+            </div>
+            <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">Login</button>
+        </form>
+    </div>
+</div>

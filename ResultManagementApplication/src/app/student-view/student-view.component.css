@@ -1,0 +1,11 @@
+.container {
+    margin-top: 60px;
+    width: 50%;
+}
+
+button {
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}

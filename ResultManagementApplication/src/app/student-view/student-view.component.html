@@ -1,0 +1,35 @@
+<div class="container">
+    <h3>Find Result</h3>
+    <br>
+    <form [formGroup]="formResult">
+        <div class="row">
+            <div class="col-2">
+                <label for="rollno" class="col-form-label">Roll No.:</label>
+            </div>
+            <div class="col-10">
+                <input type="number" formControlName="rollno" id="rollno" class="form-control"
+                    placeholder="Enter your roll number">
+                    <span class="text-danger" *ngIf="rollno.invalid && (rollno.dirty || rollno.touched)">
+                        *Roll No. is required!
+                    </span>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2">
+                <label for="Name" class="col-form-label">Name:</label>
+            </div>
+            <div class="col-10">
+                <input type="text" formControlName="name" id="name" class="form-control" placeholder="Enter your name">
+                <span class="text-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+                    *Name is required!
+                </span>
+            </div>
+        </div>
+        <br>
+        <div class="d-flex justify-content-center">
+            <button type="button" (click)="result()" [disabled]="formResult.invalid" class="btn btn-primary">Search</button>
+            <button type="reset" class="btn btn-danger">Clear</button>
+        </div>
+    </form>
+</div>

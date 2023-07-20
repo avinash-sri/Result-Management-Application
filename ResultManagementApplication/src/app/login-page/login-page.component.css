@@ -1,0 +1,10 @@
+.login {
+    margin-top: 110px;
+}
+
+button {
+    margin: 30px;
+    padding: 10px 30px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}

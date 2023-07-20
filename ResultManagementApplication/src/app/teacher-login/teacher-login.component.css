@@ -1,0 +1,28 @@
+#back {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.card {
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    margin-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(13, 100, 132);
+}
+
+.card h2 {
+    color: white;
+}
+
+.card h6 {
+    color: whitesmoke;
+}
+
+label {
+    color: white;
+}

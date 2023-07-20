@@ -1,0 +1,24 @@
+#logout {
+    margin-top: 5px;
+}
+
+#addRecord {
+    margin-top: 25px;
+    margin-right: 60px;
+}
+
+h4 {
+    margin-left: 70px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#edit {
+    color: blue;
+}
+
+#close {
+    color: red;
+}

@@ -1,0 +1,45 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "rollno": 1809113030,
+      "name": "Avinash Srivastav",
+      "dob": "2000-12-23",
+      "score": 498
+    },
+    {
+      "rollno": 1809113031,
+      "name": "Aashi",
+      "dob": "1999-12-28",
+      "score": 454,
+      "id": 2
+    },
+    {
+      "rollno": 1809113024,
+      "name": "Amit",
+      "dob": "1999-06-21",
+      "score": 421,
+      "id": 3
+    },
+    {
+      "rollno": 1809113056,
+      "name": "Shweta",
+      "dob": "1999-07-23",
+      "score": 435,
+      "id": 4
+    }
+  ],
+  "loginTeachers": [
+    {
+      "email": "avinash@gmail.com",
+      "password": "avinash"
+    },
+    {
+      "email": "srivastav@gmail.com",
+      "password": "srivastav"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

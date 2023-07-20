@@ -1,0 +1,41 @@
+<div class="container">
+    <h3><strong> Edit Result </strong></h3>
+    <br>
+    <form [formGroup]="formValue">
+        <div>
+            <label for="rollno" class="form-label">Roll No.</label>
+            <input type="number" formControlName="rollno" minlength="5" maxlength="10" class="form-control" id="rollno"
+                placeholder="Enter roll number">
+            <span class="text-danger" *ngIf="rollno.invalid && (rollno.dirty || rollno.touched)">
+                *Roll No. is required!
+            </span>
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" formControlName="name" minlength="2" maxlength="30" class="form-control" id="name"
+                placeholder="Enter name ">
+            <span class="text-danger" *ngIf="name.invalid && (name.dirty || name.touched)">
+                *Name is required!
+            </span>
+        </div>
+        <div class="mb-3">
+            <label for="dob" class="form-label">Date Of Birth</label>
+            <input type="date" formControlName="dob" class="form-control" id="name" placeholder="Enter DOB(yyyy-mm-dd)">
+            <span class="text-danger" *ngIf="dob.invalid && (dob.dirty || dob.touched)">
+                *Date Of Birth is required!
+            </span>
+        </div>
+        <div class="mb-3">
+            <label for="score" class="form-label">Score</label>
+            <input type="number" formControlName="score" [min]="100" [max]="500" class="form-control" id="score"
+                placeholder="Enter score">
+            <span class="text-danger" *ngIf="score.invalid && (score.dirty || score.touched)">
+                *Score is required!
+            </span>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary" [disabled]="formValue.invalid" (click)="updateUserDetails()">Update</button>
+            <button type="reset" class="btn btn-secondary mx-5">Clear</button>
+        </div>
+    </form>
+</div>
